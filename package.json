@@ -1,0 +1,25 @@
+{
+  "name": "goweb",
+  "version": "0.0.1",
+  "description": "A simple blog like website.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lack-xu/goweb.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "john Xu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lack-xu/goweb/issues"
+  },
+  "homepage": "https://github.com/lack-xu/goweb#readme"
+}
