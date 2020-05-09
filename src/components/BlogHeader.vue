@@ -6,7 +6,7 @@
     </div>
     <nav>
       <ul class="menu">
-        <!-- <li class="menu-item">简介</li> -->
+        <li class="menu-item" @click="msg = 'Hello World!'">简介</li>
         <li class="menu-item">登陆</li>
         <li class="menu-item">游客试用</li>
       </ul>
