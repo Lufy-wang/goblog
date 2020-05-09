@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="isolation:isolate"
+  viewBox="0 0 179 84" width="179pt" height="112">
+  <defs>
+    <clipPath id="prefix__a">
+      <path d="M0 0h179v84H0z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#prefix__a)">
+    <path d="M25 25h129v34H25V25z" fill="none"/>
+    <text transform="translate(38 50.722)" style="font-variant-ligatures:none"
+      font-family="Georgia" font-weight="400" font-size="25" font-style="italic" fill="#323232">
+      GO!Blog!
+    </text>
+  </g>
+</svg>
