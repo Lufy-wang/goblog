@@ -1,6 +1,7 @@
 <template>
   <header class="header">
     <div class="header-logo">
+      <img src="../assets/logo.svg" alt="GO!Blog!" />
       <span class="header-letter">GO!Blog!</span>
     </div>
     <nav>
@@ -42,6 +43,7 @@ export default {
 
   .menu {
     display: flex;
+    margin: 2em;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
