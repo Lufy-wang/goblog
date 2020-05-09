@@ -1,7 +1,7 @@
 <template>
   <div>
     <BlogHeader msg="Hello Vue!"></BlogHeader>
-    <BlogBody vue-on:click="msg='世界你好'"></BlogBody>
+    <BlogBody msg="你好世界"></BlogBody>
   </div>
 </template>
 
@@ -15,8 +15,10 @@ export default {
     BlogHeader,
     BlogBody
   },
-  methods: {
-
+  data() {
+    return {
+      active: false
+    };
   }
 };
 </script>
