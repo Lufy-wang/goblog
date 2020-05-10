@@ -1,11 +1,16 @@
 <template>
-  <div class="bg-container">
-    <BlogText v-bind:msg="msg"></BlogText>
+  <div class="page-container">
+    <!-- <span>SideBar</span> -->
+    <BlogText></BlogText>
   </div>
 </template>
 
 <script>
 import BlogText from "./BlogText.vue";
+import { store } from "../store/index";
+import { mapGetters } from "vuex";
+// todo: 找出用得到的函数
+
 export default {
   name: "BlogBody",
   components: {
@@ -13,16 +18,21 @@ export default {
   },
   props: {
     msg: String
+  },
+  // TODO: 了解为什么会导致组件失误
+  computed: {
+    getmsg: () => mapGetters("allMsg")
+  },
+  methods: {
+    msgchange: () => store.commit("msgchange")
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-#bg-logo {
-  display: grid;
-  opacity: 0.3;
-  color: #f29188;
-  // background-image: url(../assets/map-marked-alt-solid.svg);
+.page-container {
+  // display: grid;
+  // text-align-last: center;
 }
 </style>

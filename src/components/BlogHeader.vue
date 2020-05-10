@@ -1,14 +1,15 @@
 <template>
   <header class="header">
     <div class="header-logo">
-      <img src="../assets/logo.svg" alt="GO!Blog!" />
-      <span class="header-letter">GO!Blog!</span>
+      <a id="Home" href="http://192.168.5:8080/">
+        <img src="../assets/img/navigation.svg" alt="GO!Blog!" />
+        <span class="header-letter">GO!Blog!</span>
+      </a>
     </div>
     <nav>
       <ul class="menu">
-        <li class="menu-item" @click="msg = 'Hello World!'">简介</li>
-        <li class="menu-item">登陆</li>
-        <li class="menu-item">游客试用</li>
+        <a class="menu-item">登陆</a>
+        <a class="menu-item">游客试用</a>
       </ul>
     </nav>
   </header>
@@ -19,6 +20,11 @@ export default {
   name: "BlogHeader",
   props: {
     msg: String
+  },
+  data() {
+    return {
+      activate: false
+    };
   }
 };
 </script>
@@ -47,10 +53,12 @@ export default {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    opacity: 0.7;
+    white-space: nowrap;
+    // opacity: 0.7;
 
     &-item {
       margin: 0 47px;
+      text-decoration: none;
     }
   }
 
@@ -58,5 +66,9 @@ export default {
     color: #f2798f;
     border-bottom: 4px solid #f2798f;
   }
+}
+
+#Home {
+  text-decoration: none;
 }
 </style>
