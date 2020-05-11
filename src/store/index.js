@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import BlogHeader from "../components/BlogHeader.vue";
+// import HomeHeader from "../components/HomeHeader.vue";
 
 Vue.use(Vuex);
 
@@ -12,7 +12,7 @@ export default new Vuex.Store({
     allMsg: state => state.msg
   },
   modules: {
-    BlogHeader
+    // HomeHeader
   },
   mutations: {
     msgchange: state => state.msg

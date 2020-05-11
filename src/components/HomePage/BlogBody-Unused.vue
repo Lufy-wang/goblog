@@ -1,7 +1,8 @@
 <template>
   <div class="page-container">
-    <!-- <span>SideBar</span> -->
+    <!-- <span></span> -->
     <BlogText></BlogText>
+    <!-- <span></span> -->
   </div>
 </template>
 
@@ -12,7 +13,7 @@ import { mapGetters } from "vuex";
 // todo: 找出用得到的函数
 
 export default {
-  name: "BlogBody",
+  name: "HomeBody",
   components: {
     BlogText
   },
@@ -32,7 +33,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .page-container {
-  // display: grid;
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
   // text-align-last: center;
 }
 </style>

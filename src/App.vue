@@ -1,18 +1,18 @@
 <template>
   <div>
-    <BlogHeader></BlogHeader>
-    <BlogBody></BlogBody>
+    <HomeHeader></HomeHeader>
+    <HomeBody></HomeBody>
   </div>
 </template>
 
 <script>
-import BlogHeader from "./components/BlogHeader.vue";
-import BlogBody from "./components/BlogBody.vue";
+import HomeHeader from "./components/HomePage/HomeHeader.vue";
+import HomeBody from "./components/HomePage/HomeBody.vue";
 
 export default {
   components: {
-    BlogHeader,
-    BlogBody
+    HomeHeader,
+    HomeBody
   }
 };
 </script>
