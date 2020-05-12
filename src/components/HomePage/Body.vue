@@ -17,13 +17,13 @@
       </h2>
       <img
         id="img-1"
-        src="../../assets/img/undraw_through_the_park_lxnl.svg"
+        src="@/assets/img/undraw_through_the_park_lxnl.svg"
         alt="beauty"
       />
 
       <img
         id="img-2"
-        src="../../assets/img/undraw_reading_time_gvg0.svg"
+        src="@/assets/img/undraw_reading_time_gvg0.svg"
         alt="books"
       />
       <h2 id="text-2">
@@ -35,7 +35,7 @@
       </h2>
       <img
         id="img-3"
-        src="../../assets/img/undraw_breakfast_psiw.svg"
+        src="@/assets/img/undraw_breakfast_psiw.svg"
         alt="feast"
       />
     </div>
@@ -69,7 +69,6 @@ export default {
   grid-gap: 0.625rem;
   text-align: center;
   align-items: center;
-  justify-content: center;
 }
 
 #page-footer {

@@ -2,20 +2,21 @@
   <header class="header">
     <nav class="menu">
       <router-link to="/">
-        <span id="header-letter">
+        <span id="logo">
           GO!Blog!
         </span>
       </router-link>
       <!-- todo:对于不同屏幕大小下的字体大小的设定进行修改 -->
       <router-link to="/login">
-        <span class="menu-item">
+        <!-- 决定是否使用li标签 -->
+        <li class="menu-item">
           用户登陆
-        </span>
+        </li>
       </router-link>
       <router-link to="/guest">
-        <span class="menu-item">
+        <li class="menu-item">
           游客试用
-        </span>
+        </li>
       </router-link>
     </nav>
     <router-view />
@@ -39,10 +40,32 @@ export default {
 
 <style scope lang="scss">
 .header {
-  text-align: center;
-  padding: 0;
   display: grid;
+  a {
+    text-decoration: none;
+  }
+}
 
-  grid-template-columns: 20% 1fr;
+.menu {
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 1.5rem;
+
+  #logo {
+    color: black;
+    font-family: Georgia, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  &-item {
+    color: black;
+    font-weight: bold;
+    list-style: none;
+  }
 }
 </style>
