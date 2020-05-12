@@ -1,6 +1,5 @@
 <template>
   <div id="page">
-    <!-- <HomeHeader></HomeHeader> -->
     <!-- todo: 将 page-header 和 page-footer 居中-->
     <div id="page-header">
       <h1>

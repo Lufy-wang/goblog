@@ -1,25 +1,24 @@
 <template>
   <header class="header">
-    <div class="header-logo">
-      <a id="Home" href="http://192.168.5:8080/">
-        <!-- todo:find a better svg icon OR dont't use icon -->
-        <!-- <img src="../assets/img/maps-svgrepo-com.svg" alt="logo" /> -->
-        <span class="header-letter">
-          GO!Blog!
-        </span>
-      </a>
-    </div>
+    <span class="header-letter">
+      <router-link to="/">
+        GO!Blog!
+      </router-link>
+    </span>
     <nav>
       <!-- todo:对于不同屏幕大小下的字体大小的设定进行修改 -->
-      <ul class="menu">
-        <a class="menu-item">
+      <span class="menu-item">
+        <router-link to="/login">
           用户登陆
-        </a>
-        <a class="menu-item">
+        </router-link>
+      </span>
+      <span class="menu-item">
+        <router-link to="/guest">
           游客试用
-        </a>
-      </ul>
+        </router-link>
+      </span>
     </nav>
+    <router-view />
   </header>
 </template>
 
@@ -31,8 +30,11 @@ export default {
   },
   data() {
     return {
-      activate: false
+      // activate: false
     };
+  },
+  mounted: {
+    // sendMenu: () => this.$emit("update:msg", this.props.msg)
   }
 };
 </script>
